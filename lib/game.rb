@@ -31,7 +31,7 @@ class Game
   end 
   
   def draw?
-    !won? && @board.cells.count {|p| p == "X"} == @board.cells.count {|p| p == "O"}
+    !won? && @board.full?
   end 
   
   def over?
