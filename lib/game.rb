@@ -36,7 +36,7 @@ class Game
     won? || draw?
   end 
   
-  def winner?
+  def winner
     board.cells[won?[0]] if won?
   end 
     
