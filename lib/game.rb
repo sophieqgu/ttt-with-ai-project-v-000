@@ -23,7 +23,7 @@ class Game
   end 
   
   def won?
-    WIN_COMBINATIONS.select do |combo| 
+    WIN_COMBINATIONS.detect do |combo| 
       board.cells[combo[0]] == board.cells[combo[1]] && board.cells[combo[1]] == board.cells[combo[2]] && board.cells[combo[0]] != " "
     end 
   end 
