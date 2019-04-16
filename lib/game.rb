@@ -39,9 +39,7 @@ class Game
   end 
   
   def winner?
-    "X" if won? && current_player == "O"
-    "O" if won? && current_player == "X"
-    nil 
+    won? && current_player == "O"
   end 
     
   def turn 
