@@ -23,7 +23,7 @@ class Game
   end 
   
   def won?
-    !draw? && WIN_COMBINATIONS.select do |combo| 
+    WIN_COMBINATIONS.select do |combo| 
       combo.all? do |i|
         @board.cells[i] == "X" || @board.cells[i] == "O"
       end 
