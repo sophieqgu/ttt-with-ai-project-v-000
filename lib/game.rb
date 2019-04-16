@@ -45,8 +45,7 @@ class Game
   end 
     
   def turn 
-    player_1.move if current_player == player_1.token
-    player_2.move if current_player == player_2.token 
+     
   end 
   
   def play
