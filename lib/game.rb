@@ -24,9 +24,7 @@ class Game
   
   def won?
     WIN_COMBINATIONS.select do |combo| 
-      combo.all? do |i|
-        board.cells[i] == "X" || board.cells[i] == "O"
-      end 
+      combo
     end 
   end 
   
