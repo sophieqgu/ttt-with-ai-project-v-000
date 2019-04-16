@@ -19,8 +19,7 @@ class Game
   end 
 
   def current_player 
-    "X" if @board.cells.count("X") == @board.cells.count("O")
-    "O" if @board.cells.count("X") > @board.cells.count("O")
+    board.turn_count % 2 == 0 ? player_1 : player_2
   end 
   
   def won?
