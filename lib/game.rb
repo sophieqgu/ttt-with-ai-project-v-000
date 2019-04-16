@@ -24,7 +24,7 @@ class Game
   
   def won?
     WIN_COMBINATIONS.select do |combo| 
-      combo
+      board.cells[combo[0]]
     end 
   end 
   
