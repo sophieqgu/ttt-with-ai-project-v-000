@@ -39,7 +39,7 @@ class Game
   end 
   
   def winner?
-    won? && current_player == "O"
+    board.cells[won?[0]] if won?
   end 
     
   def turn 
